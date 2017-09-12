@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS indiez;
+
+
+CREATE TABLE `task_info` (
+	`task_id` INT(11) NOT NULL AUTO_INCREMENT,
+	`task_name` VARCHAR(100) NULL DEFAULT NULL,
+	`task_description` VARCHAR(500) NULL DEFAULT NULL,
+	`task_createdby` VARCHAR(100) NULL DEFAULT NULL,
+	`task_crt_ts` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`task_enddate` DATE NULL DEFAULT NULL,
+	INDEX `Index 1` (`task_id`)
+);
